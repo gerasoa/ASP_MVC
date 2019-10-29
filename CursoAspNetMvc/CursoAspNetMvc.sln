@@ -3,8 +3,39 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{75F3B960-AE6A-4736-A267-4C84240AF31B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{1B2C911F-7150-4CB7-B2A3-786AC5D46576}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{AEAB8AE8-0731-4AB4-89A4-63D931663D49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{C24DF22B-BF3E-48FD-B9F5-18B74E995EDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{ADF01C83-C995-47A9-A0B9-2B4789158418}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", "{C095738D-5CDD-42B4-A43F-5272A4B9B821}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{4BE26E26-1185-42C5-BCCE-5BC0D8FF30D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAS.CursoMvc.Domain", "src\RAS.CursoMvc.Domain\RAS.CursoMvc.Domain.csproj", "{0D5CB5E4-CE83-4FC6-A365-77093B2C6E6A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D5CB5E4-CE83-4FC6-A365-77093B2C6E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5CB5E4-CE83-4FC6-A365-77093B2C6E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5CB5E4-CE83-4FC6-A365-77093B2C6E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5CB5E4-CE83-4FC6-A365-77093B2C6E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D5CB5E4-CE83-4FC6-A365-77093B2C6E6A} = {C24DF22B-BF3E-48FD-B9F5-18B74E995EDD}
+		{C095738D-5CDD-42B4-A43F-5272A4B9B821} = {ADF01C83-C995-47A9-A0B9-2B4789158418}
+		{4BE26E26-1185-42C5-BCCE-5BC0D8FF30D2} = {ADF01C83-C995-47A9-A0B9-2B4789158418}
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,5 @@
-﻿using RAS.CursoMvc.Domain.Interfaces.Repository;
+﻿using Dapper;
+using RAS.CursoMvc.Domain.Interfaces.Repository;
 using RAS.CursoMvc.Domain.Model;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,30 @@ namespace RAS.CursoMvc.Infra.Data.Repository
         public IEnumerable<Cliente> ObterAtivos()
         {
             return Buscar(c => c.Ativo && !c.Excluido).ToList();
+        }
+
+        //Dapper
+        public override IEnumerable<Cliente> ObterTodos()
+        {
+            var sql = @"SELECT * FROM Clientes c" +
+                       "WHERE c.Excluido == 0 AND c.Ativo = 1"; // 0=false 1=true
+            return Db.Database.Connection.Query<Cliente>(sql);
+        }
+
+        public override Cliente ObterPorId(Guid id)
+        {
+            var sql = @"SELECT * FROM Clientes c " +
+                       "LETF JOIN Enderecos e " +
+                       "ON c.Id = e.ClienteId " +
+                       "WHERE c.Id == @uid";
+
+            return Db.Database.Connection.Query<Cliente, Endereco, Cliente>(sql, 
+                (c, e) =>
+                {
+                    c.Enderecos.Add(e);
+                    return c;
+                },
+                new { uid = id }).FirstOrDefault();
         }
 
         public Cliente ObterPorCpf(string cpf)
@@ -31,5 +56,7 @@ namespace RAS.CursoMvc.Infra.Data.Repository
 
             Atualizar(cliente);
         }
+
+
     }
 }

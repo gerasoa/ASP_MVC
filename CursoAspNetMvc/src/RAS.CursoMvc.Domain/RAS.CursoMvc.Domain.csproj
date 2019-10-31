@@ -43,6 +43,8 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\Repository\IClientRepository.cs" />
+    <Compile Include="Interfaces\Repository\IRepository.cs" />
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Endereco.cs" />
     <Compile Include="Model\Entity.cs" />

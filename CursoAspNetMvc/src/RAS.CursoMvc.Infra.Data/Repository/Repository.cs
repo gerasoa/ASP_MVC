@@ -47,12 +47,12 @@ namespace RAS.CursoMvc.Infra.Data.Repository
             Db.Dispose();
         }
 
-        public TEntity ObterPorId(Guid id)
+        public virtual TEntity ObterPorId(Guid id)
         {
             return DbSet.Find(id); // O find é um método que sempre buscará pela chave primária
         }
 
-        public IEnumerable<TEntity> ObterTodos()
+        public virtual IEnumerable<TEntity> ObterTodos()
         {
             return DbSet.ToList();
         }

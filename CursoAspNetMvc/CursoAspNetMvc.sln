@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 -
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAS.CursoMvc.Domain", "src\RAS.CursoMvc.Domain\RAS.CursoMvc.Domain.csproj", "{0D5CB5E4-CE83-4FC6-A365-77093B2C6E6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAS.CursoMvc.Infra.Data", "src\RAS.CursoMvc.Infra.Data\RAS.CursoMvc.Infra.Data.csproj", "{29CDC508-964D-42C8-85AC-A5F3D8DBEC67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{0D5CB5E4-CE83-4FC6-A365-77093B2C6E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D5CB5E4-CE83-4FC6-A365-77093B2C6E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D5CB5E4-CE83-4FC6-A365-77093B2C6E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29CDC508-964D-42C8-85AC-A5F3D8DBEC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29CDC508-964D-42C8-85AC-A5F3D8DBEC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29CDC508-964D-42C8-85AC-A5F3D8DBEC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29CDC508-964D-42C8-85AC-A5F3D8DBEC67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,5 +43,6 @@ Global
 		{0D5CB5E4-CE83-4FC6-A365-77093B2C6E6A} = {C24DF22B-BF3E-48FD-B9F5-18B74E995EDD}
 		{C095738D-5CDD-42B4-A43F-5272A4B9B821} = {ADF01C83-C995-47A9-A0B9-2B4789158418}
 		{4BE26E26-1185-42C5-BCCE-5BC0D8FF30D2} = {ADF01C83-C995-47A9-A0B9-2B4789158418}
+		{29CDC508-964D-42C8-85AC-A5F3D8DBEC67} = {C095738D-5CDD-42B4-A43F-5272A4B9B821}
 	EndGlobalSection
 EndGlobal

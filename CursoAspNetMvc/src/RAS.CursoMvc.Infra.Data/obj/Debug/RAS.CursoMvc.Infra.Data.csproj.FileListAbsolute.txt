@@ -1,0 +1,15 @@
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\bin\Debug\RAS.CursoMvc.Infra.Data.dll.config
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\bin\Debug\RAS.CursoMvc.Infra.Data.dll
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\bin\Debug\RAS.CursoMvc.Infra.Data.pdb
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\bin\Debug\EntityFramework.dll
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\bin\Debug\RAS.CursoMvc.Domain.dll
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\bin\Debug\RAS.CursoMvc.Domain.pdb
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\bin\Debug\RAS.CursoMvc.Domain.dll.config
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\bin\Debug\EntityFramework.xml
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\obj\Debug\RAS.CursoMvc.Infra.Data.csprojAssemblyReference.cache
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\obj\Debug\RAS.CursoMvc.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\obj\Debug\RAS.CursoMvc.Infra.Data.csproj.CopyComplete
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\obj\Debug\RAS.CursoMvc.Infra.Data.dll
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Infra.Data\obj\Debug\RAS.CursoMvc.Infra.Data.pdb

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RAS.CursoMvc.Domain.Interfaces.Repository
 {
-    public interface IClientRepository
+    public interface IClientRepository : IRepository<Cliente>
     {
         Cliente ObterPorCpf(string cpf);
 

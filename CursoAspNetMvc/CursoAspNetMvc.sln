@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{75F3B960-AE6A-4736-A267-4C84240AF31B}"
 EndProject
@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAS.CursoMvc.Domain", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAS.CursoMvc.Infra.Data", "src\RAS.CursoMvc.Infra.Data\RAS.CursoMvc.Infra.Data.csproj", "{29CDC508-964D-42C8-85AC-A5F3D8DBEC67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAS.CursoMvc.Application", "src\RAS.CursoMvc.Application\RAS.CursoMvc.Application.csproj", "{A6C59522-861F-4CFB-914F-FB74975DAE8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,14 +37,22 @@ Global
 		{29CDC508-964D-42C8-85AC-A5F3D8DBEC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29CDC508-964D-42C8-85AC-A5F3D8DBEC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29CDC508-964D-42C8-85AC-A5F3D8DBEC67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C59522-861F-4CFB-914F-FB74975DAE8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C59522-861F-4CFB-914F-FB74975DAE8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C59522-861F-4CFB-914F-FB74975DAE8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C59522-861F-4CFB-914F-FB74975DAE8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0D5CB5E4-CE83-4FC6-A365-77093B2C6E6A} = {C24DF22B-BF3E-48FD-B9F5-18B74E995EDD}
 		{C095738D-5CDD-42B4-A43F-5272A4B9B821} = {ADF01C83-C995-47A9-A0B9-2B4789158418}
 		{4BE26E26-1185-42C5-BCCE-5BC0D8FF30D2} = {ADF01C83-C995-47A9-A0B9-2B4789158418}
+		{0D5CB5E4-CE83-4FC6-A365-77093B2C6E6A} = {C24DF22B-BF3E-48FD-B9F5-18B74E995EDD}
 		{29CDC508-964D-42C8-85AC-A5F3D8DBEC67} = {C095738D-5CDD-42B4-A43F-5272A4B9B821}
+		{A6C59522-861F-4CFB-914F-FB74975DAE8B} = {AEAB8AE8-0731-4AB4-89A4-63D931663D49}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C690D346-D368-4FC1-A75E-DC360B658074}
 	EndGlobalSection
 EndGlobal

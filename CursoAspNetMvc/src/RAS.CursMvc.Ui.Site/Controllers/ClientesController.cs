@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace RAS.CursMvc.Ui.Site.Controllers
 {
+    [Authorize]
     public class ClientesController : Controller
     {
         // private ApplicationDbContext db = new ApplicationDbContext();
@@ -18,6 +19,7 @@ namespace RAS.CursMvc.Ui.Site.Controllers
 
         }
 
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View(_clienteAppService.ObterAtivos());
@@ -82,6 +84,7 @@ namespace RAS.CursMvc.Ui.Site.Controllers
             return View(clienteViewModel);
         }
 
+        [Authorize(Roles ="Admin,Coord,Gerente")]
         public ActionResult Delete(Guid? id)
         {
             if (id == null)
@@ -97,6 +100,7 @@ namespace RAS.CursMvc.Ui.Site.Controllers
             return View(clienteViewModel);
         }
 
+        [Authorize(Roles = "Admin,Coord,Gerente")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)

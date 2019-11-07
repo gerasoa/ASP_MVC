@@ -8,6 +8,7 @@ namespace RAS.CursoMvc.Domain.Model
         public Cliente()
         {
             Id = Guid.NewGuid();
+            Enderecos = new List<Endereco>();
         }
 
         public string Nome { get; set; }

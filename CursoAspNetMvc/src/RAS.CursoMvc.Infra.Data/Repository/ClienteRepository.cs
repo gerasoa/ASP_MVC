@@ -25,9 +25,9 @@ namespace RAS.CursoMvc.Infra.Data.Repository
         public override Cliente ObterPorId(Guid id)
         {
             var sql = @"SELECT * FROM Clientes c " +
-                       "LETF JOIN Enderecos e " +
+                       "LEFT JOIN Enderecos e " +
                        "ON c.Id = e.ClienteId " +
-                       "WHERE c.Id == @uid";
+                       "WHERE c.Id = @uid";
 
             return Db.Database.Connection.Query<Cliente, Endereco, Cliente>(sql, 
                 (c, e) =>

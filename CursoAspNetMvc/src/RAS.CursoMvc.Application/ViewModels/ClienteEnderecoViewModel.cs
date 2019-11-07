@@ -8,7 +8,7 @@ namespace RAS.CursoMvc.Application.ViewModels
 {
     public class ClienteEnderecoViewModel
     {
-        public ClienteEnderecoViewModel Cliente { get; set; }
+        public ClienteViewModel Cliente { get; set; }
 
         public EnderecoViewModel Endereco { get; set; }
     }

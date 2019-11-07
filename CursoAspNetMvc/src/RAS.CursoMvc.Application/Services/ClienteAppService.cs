@@ -1,6 +1,8 @@
-﻿using RAS.CursoMvc.Application.Interfaces;
+﻿using AutoMapper;
+using RAS.CursoMvc.Application.Interfaces;
 using RAS.CursoMvc.Application.ViewModels;
 using RAS.CursoMvc.Domain.Interfaces.Repository;
+using RAS.CursoMvc.Domain.Model;
 using RAS.CursoMvc.Infra.Data.Repository;
 using System;
 using System.Collections.Generic;
@@ -10,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace RAS.CursoMvc.Application.Services
 {
-    class ClienteAppService : IClienteAppService
+    public class ClienteAppService : IClienteAppService
     {
         private readonly IClientRepository _clienteRepository;
 
@@ -19,49 +21,61 @@ namespace RAS.CursoMvc.Application.Services
             _clienteRepository = new ClienteRepository();
         }
 
+        //Aqui será utilizado o AutoMapper
         public ClienteEnderecoViewModel Adicionar(ClienteEnderecoViewModel obj)
         {
-            //return _clienteRepository.Adicionar();
+            var cliente = Mapper.Map<Cliente>(obj.Cliente);
+            var endereco = Mapper.Map<Endereco>(obj.Endereco);
+
+            cliente.Enderecos.Add(endereco);
+            var ClienteReturn = _clienteRepository.Adicionar(cliente);
+
+            obj.Cliente = Mapper.Map<ClienteViewModel>(ClienteReturn);
+            return obj;
         }
 
         public ClienteViewModel Atualizar(ClienteViewModel obj)
         {
-            throw new NotImplementedException();
+            var cliente = Mapper.Map<Cliente>(obj);
+            var clienteReturn = _clienteRepository.Atualizar(cliente);
+
+            obj = Mapper.Map<ClienteViewModel>(clienteReturn);
+            return obj;
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _clienteRepository.Dispose();
         }
 
         public IEnumerable<ClienteViewModel> ObterAtivos()
         {
-            throw new NotImplementedException();
+            return Mapper.Map<IEnumerable<ClienteViewModel>>(_clienteRepository.ObterAtivos());
         }
 
         public ClienteViewModel ObterPorCpf(string cpf)
         {
-            throw new NotImplementedException();
+            return Mapper.Map<ClienteViewModel>(_clienteRepository.ObterPorCpf(cpf));
         }
 
         public ClienteViewModel ObterPorEmail(string email)
         {
-            throw new NotImplementedException();
+            return Mapper.Map<ClienteViewModel>(_clienteRepository.ObterPorEmail(email));
         }
 
         public ClienteViewModel ObterPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return Mapper.Map<ClienteViewModel>(_clienteRepository.ObterPorId(id));
         }
 
         public IEnumerable<ClienteViewModel> ObterTodos()
         {
-            throw new NotImplementedException();
+            return Mapper.Map<IEnumerable<ClienteViewModel>>(_clienteRepository.ObterTodos());
         }
 
         public void Remover(Guid id)
         {
-            throw new NotImplementedException();
+            _clienteRepository.Remover(id);
         }
     }
 }

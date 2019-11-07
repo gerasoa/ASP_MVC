@@ -1,12 +1,12 @@
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\bin\Debug\RAS.CursoMvc.Domain.dll.config
 C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\bin\Debug\RAS.CursoMvc.Domain.dll
 C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\bin\Debug\RAS.CursoMvc.Domain.pdb
-C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\obj\Debug\RAS.CursoMvc.Domain.dll
-C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\obj\Debug\RAS.CursoMvc.Domain.pdb
-C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\bin\Debug\RAS.CursoMvc.Domain.dll.config
 C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\bin\Debug\EntityFramework.dll
 C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\bin\Debug\EntityFramework.xml
 C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\obj\Debug\RAS.CursoMvc.Domain.csprojAssemblyReference.cache
 C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\obj\Debug\RAS.CursoMvc.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\obj\Debug\RAS.CursoMvc.Domain.csproj.CopyComplete
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\obj\Debug\RAS.CursoMvc.Domain.dll
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\obj\Debug\RAS.CursoMvc.Domain.pdb
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursoMvc.Domain\obj\Debug\RAS.CursoMvc.Domain.csprojAssemblyReference.cache

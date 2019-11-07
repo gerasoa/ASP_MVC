@@ -2,6 +2,7 @@
 using RAS.CursoMvc.Infra.Data.EntityConfig;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
@@ -44,6 +45,23 @@ namespace RAS.CursoMvc.Infra.Data.Context
             modelBuilder.Configurations.Add(new EnderecoConfig());
 
             base.OnModelCreating(modelBuilder);
+        }
+
+        public override int SaveChanges()
+        {
+            foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("DataCadastro") != null))
+            {
+                if(entry.State == EntityState.Added)
+                {
+                    entry.Property("DataCadastro").CurrentValue = DateTime.Now;
+                }
+
+                if (entry.State == EntityState.Modified)
+                {
+                    entry.Property("DataCadastro").IsModified = false;
+                }
+            }
+            return base.SaveChanges();
         }
     }
 }

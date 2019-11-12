@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAS.CursoMvc.Application", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAS.CursMvc.Ui.Site", "src\RAS.CursMvc.Ui.Site\RAS.CursMvc.Ui.Site.csproj", "{2A8AABF3-0C98-428A-A199-7EA39A1E7004}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAS.CursoMvc.Infra.CrossCutting.MvcFilters", "src\RAS.CursoMvc.Infra.CrossCutting.MvcFilters\RAS.CursoMvc.Infra.CrossCutting.MvcFilters.csproj", "{91C3DC03-1898-4093-8C06-5009FAA12162}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{2A8AABF3-0C98-428A-A199-7EA39A1E7004}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A8AABF3-0C98-428A-A199-7EA39A1E7004}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A8AABF3-0C98-428A-A199-7EA39A1E7004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C3DC03-1898-4093-8C06-5009FAA12162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C3DC03-1898-4093-8C06-5009FAA12162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C3DC03-1898-4093-8C06-5009FAA12162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C3DC03-1898-4093-8C06-5009FAA12162}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{29CDC508-964D-42C8-85AC-A5F3D8DBEC67} = {C095738D-5CDD-42B4-A43F-5272A4B9B821}
 		{A6C59522-861F-4CFB-914F-FB74975DAE8B} = {AEAB8AE8-0731-4AB4-89A4-63D931663D49}
 		{2A8AABF3-0C98-428A-A199-7EA39A1E7004} = {75F3B960-AE6A-4736-A267-4C84240AF31B}
+		{91C3DC03-1898-4093-8C06-5009FAA12162} = {4BE26E26-1185-42C5-BCCE-5BC0D8FF30D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C690D346-D368-4FC1-A75E-DC360B658074}

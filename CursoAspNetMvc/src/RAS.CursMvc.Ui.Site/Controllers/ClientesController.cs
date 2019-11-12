@@ -1,9 +1,11 @@
 ﻿using RAS.CursoMvc.Application.Interfaces;
 using RAS.CursoMvc.Application.Services;
 using RAS.CursoMvc.Application.ViewModels;
+using RAS.CursoMvc.Infra.CrossCutting.MvcFilters;
 using System;
 using System.Net;
 using System.Web.Mvc;
+
 
 namespace RAS.CursMvc.Ui.Site.Controllers
 {
@@ -16,15 +18,15 @@ namespace RAS.CursMvc.Ui.Site.Controllers
         public ClientesController()
         {
             _clienteAppService = new ClienteAppService();
-
         }
 
-        [AllowAnonymous]
+        [ClaimsAuthorize("Cliente", "LT")]
         public ActionResult Index()
         {
             return View(_clienteAppService.ObterAtivos());
         }
 
+        [ClaimsAuthorize("Cliente", "VI")]
         public ActionResult Details(Guid? id)
         {
             if (id == null)
@@ -39,11 +41,13 @@ namespace RAS.CursMvc.Ui.Site.Controllers
             return View(clienteViewModel);
         }
 
+        [ClaimsAuthorize("Cliente", "IN")]
         public ActionResult Create()
         {
             return View();
         }
 
+        [ClaimsAuthorize("Cliente", "ED")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(ClienteEnderecoViewModel clienteEnderecoViewModel)
@@ -57,6 +61,7 @@ namespace RAS.CursMvc.Ui.Site.Controllers
             return View(clienteEnderecoViewModel);
         }
 
+        [ClaimsAuthorize("Cliente", "ED")]
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
@@ -71,6 +76,7 @@ namespace RAS.CursMvc.Ui.Site.Controllers
             return View(clienteViewModel);
         }
 
+        [ClaimsAuthorize("Cliente", "ED")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(ClienteViewModel clienteViewModel)
@@ -84,7 +90,7 @@ namespace RAS.CursMvc.Ui.Site.Controllers
             return View(clienteViewModel);
         }
 
-        [Authorize(Roles ="Admin,Coord,Gerente")]
+        [ClaimsAuthorize("Cliente", "EX")]
         public ActionResult Delete(Guid? id)
         {
             if (id == null)
@@ -99,8 +105,9 @@ namespace RAS.CursMvc.Ui.Site.Controllers
             }
             return View(clienteViewModel);
         }
+        // Cliente = "LT,IN, VI, ED, EX"
 
-        [Authorize(Roles = "Admin,Coord,Gerente")]
+        [ClaimsAuthorize("Cliente", "EX")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)

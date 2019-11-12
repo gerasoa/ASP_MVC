@@ -298,6 +298,10 @@
       <Project>{a6c59522-861f-4cfb-914f-fb74975dae8b}</Project>
       <Name>RAS.CursoMvc.Application</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RAS.CursoMvc.Infra.CrossCutting.MvcFilters\RAS.CursoMvc.Infra.CrossCutting.MvcFilters.csproj">
+      <Project>{91c3dc03-1898-4093-8c06-5009faa12162}</Project>
+      <Name>RAS.CursoMvc.Infra.CrossCutting.MvcFilters</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

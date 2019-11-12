@@ -131,3 +131,5 @@ C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursMvc.Ui.
 C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursMvc.Ui.Site\obj\Debug\RAS.CursMvc.Ui.Site.csproj.CopyComplete
 C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursMvc.Ui.Site\obj\Debug\RAS.CursMvc.Ui.Site.dll
 C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursMvc.Ui.Site\obj\Debug\RAS.CursMvc.Ui.Site.pdb
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursMvc.Ui.Site\bin\RAS.CursoMvc.Infra.CrossCutting.MvcFilters.dll
+C:\Users\Rogerio\Documents\Cursos\git\ASP_MVC\CursoAspNetMvc\src\RAS.CursMvc.Ui.Site\bin\RAS.CursoMvc.Infra.CrossCutting.MvcFilters.pdb

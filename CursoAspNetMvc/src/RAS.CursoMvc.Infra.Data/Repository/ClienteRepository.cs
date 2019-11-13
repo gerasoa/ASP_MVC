@@ -29,7 +29,7 @@ namespace RAS.CursoMvc.Infra.Data.Repository
                        "ON c.Id = e.ClienteId " +
                        "WHERE c.Id = @uid";
 
-            //throw new Exception("THE TRETA HAS BEEN PLANTED!!!");
+            throw new Exception("THE TRETA HAS BEEN PLANTED!!!");
 
             return Db.Database.Connection.Query<Cliente, Endereco, Cliente>(sql, 
                 (c, e) =>

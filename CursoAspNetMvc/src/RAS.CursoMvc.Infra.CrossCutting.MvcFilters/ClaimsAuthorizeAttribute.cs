@@ -19,7 +19,7 @@ namespace RAS.CursoMvc.Infra.CrossCutting.MvcFilters
 
         protected override bool AuthorizeCore(HttpContextBase httpContext)
         {
-            var identity = (ClaimsIdentity)httpContext.User.Identity;
+            var identity = (ClaimsIdentity)HttpContext.Current.User.Identity;
             var claim = identity.Claims.FirstOrDefault(c => c.Type == _claimName);
 
             return claim != null && claim.Value.Contains(_claimValue);

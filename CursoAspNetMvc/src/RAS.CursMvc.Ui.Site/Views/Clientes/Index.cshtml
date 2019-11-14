@@ -57,7 +57,7 @@
                 @*@Html.ActionLink("Delete", "Delete", new { id = item.Id }).IfClaimHelper("Cliente", "EX")*@
 
                 <a href="@Url.Action("Edit", new { id=item.Id })" class="btn btn-warning" @Html.Raw(this.IfClaimShow("Cliente", "ED"))>Editar</a>
-                <a href="@Url.Action("Detail", new { id=item.Id })" class="btn btn-primary" @Html.Raw(this.IfClaimShow("Cliente", "VI"))>Detalhes</a>
+                <a href="@Url.Action("Details", new { id=item.Id })" class="btn btn-primary" @Html.Raw(this.IfClaimShow("Cliente", "VI"))>Detalhes</a>
                 <a href="@Url.Action("Delete", new { id=item.Id })" class="btn btn-danger" @Html.Raw(this.IfClaimShow("Cliente", "EX"))>Excluir</a>
             </td>
         </tr>

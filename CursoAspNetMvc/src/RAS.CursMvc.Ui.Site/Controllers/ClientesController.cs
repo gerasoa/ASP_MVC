@@ -10,6 +10,7 @@ using System.Web.Mvc;
 namespace RAS.CursMvc.Ui.Site.Controllers
 {
     [Authorize]
+    [RoutePrefix("gestao/crm")] // Só funcionará se ativar as rotas por atributo no RouteConfig
     public class ClientesController : Controller
     {
         // private ApplicationDbContext db = new ApplicationDbContext();
@@ -20,12 +21,16 @@ namespace RAS.CursMvc.Ui.Site.Controllers
             _clienteAppService = new ClienteAppService();
         }
 
+        [Route("listar-clientes")]
         [ClaimsAuthorize("Cliente", "LT")]
         public ActionResult Index()
         {
             return View(_clienteAppService.ObterAtivos());
         }
 
+        // nome do parÃmetro"id" do tipo "guid" e caso seja informado algo diferente de 
+        // um guid será retornado erro 404
+        [Route("{id:guid}/detalhe-cliente")]
         [ClaimsAuthorize("Cliente", "VI")]
         public ActionResult Details(Guid? id)
         {
@@ -41,12 +46,14 @@ namespace RAS.CursMvc.Ui.Site.Controllers
             return View(clienteViewModel);
         }
 
+        [Route("novo-cliente")]
         [ClaimsAuthorize("Cliente", "IN")]
         public ActionResult Create()
         {
             return View();
         }
 
+        [Route("novo-cliente")]
         [ClaimsAuthorize("Cliente", "ED")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -61,6 +68,7 @@ namespace RAS.CursMvc.Ui.Site.Controllers
             return View(clienteEnderecoViewModel);
         }
 
+        [Route("{id:guid}/editar-cliente")]
         [ClaimsAuthorize("Cliente", "ED")]
         public ActionResult Edit(Guid? id)
         {
@@ -76,6 +84,7 @@ namespace RAS.CursMvc.Ui.Site.Controllers
             return View(clienteViewModel);
         }
 
+        [Route("{id:guid}/editar-cliente")]
         [ClaimsAuthorize("Cliente", "ED")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -90,6 +99,7 @@ namespace RAS.CursMvc.Ui.Site.Controllers
             return View(clienteViewModel);
         }
 
+        [Route("{id:guid}/excluir-cliente")]
         [ClaimsAuthorize("Cliente", "EX")]
         public ActionResult Delete(Guid? id)
         {
@@ -107,6 +117,7 @@ namespace RAS.CursMvc.Ui.Site.Controllers
         }
         // Cliente = "LT,IN, VI, ED, EX"
 
+        [Route("{id:guid}/excluir-cliente")]
         [ClaimsAuthorize("Cliente", "EX")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

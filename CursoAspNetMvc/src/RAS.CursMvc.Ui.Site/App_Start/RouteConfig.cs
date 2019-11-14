@@ -12,6 +12,8 @@ namespace RAS.CursMvc.Ui.Site
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            //Ativar Rotas por Atributos
+            routes.MapMvcAttributeRoutes();
 
             routes.MapRoute(
                 name: "Default",
